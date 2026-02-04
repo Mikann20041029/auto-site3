@@ -1,0 +1,380 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Notepad++ Hijacked by State-Sponsored Hackers — Content Generator</title>
+  <meta name="description" content="A curated Reddit trend with commentary, takeaways, ranking, and new links." />
+
+  <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="/assets/fx.js"></script>
+  <script>
+  // 本番でもON/OFFできる（URLに ?adsdebug=1 を付けるとON）
+  (function(){
+    var on = false;
+    try {
+      on = (location.search.includes("adsdebug=1") || localStorage.getItem("adsdebug") === "1");
+    } catch(e) {}
+    window.__ads_debug = on;
+    if (on) console.log("[ads] __ads_debug = ON");
+  })();
+</script>
+
+<script defer>
+(function(){
+  function log(){ if(window.__ads_debug) console.log.apply(console, arguments); }
+
+  function observeSlot(el){
+    if(!("IntersectionObserver" in window)) return;
+    var seen = false;
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(ent){
+        if(!seen && ent.isIntersecting){
+          seen = true;
+          log("[ads] slot entered viewport:", el.getAttribute("data-ad-slot") || el.className, new Date().toISOString());
+          io.disconnect();
+        }
+      });
+    }, {root:null, threshold:0.01});
+    io.observe(el);
+  }
+
+  function initAdsDebug(){
+    var t = new Date().toISOString();
+    var top = document.querySelector(".ad-slot.ad-top");
+    var mid = document.querySelector(".ad-slot.ad-mid");
+    var bot = document.querySelector(".ad-slot.ad-bottom");
+
+    log("[ads] DOM ready:", t);
+    log("[ads] slot exists? top=", !!top, "mid=", !!mid, "bottom=", !!bot);
+
+    if(top) observeSlot(top);
+    if(mid) observeSlot(mid);
+    if(bot) observeSlot(bot);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initAdsDebug);
+  } else {
+    initAdsDebug();
+  }
+
+  // pushState対応（SPAっぽい遷移でも再チェック）
+  (function(){
+    var _ps = history.pushState;
+    var _rs = history.replaceState;
+    function fire(){ setTimeout(initAdsDebug, 0); }
+    history.pushState = function(){ var r=_ps.apply(this, arguments); fire(); return r; };
+    history.replaceState = function(){ var r=_rs.apply(this, arguments); fire(); return r; };
+    window.addEventListener("popstate", fire);
+  })();
+})();
+</script>
+
+  
+  <link rel="canonical" href="https://YOUR_USERNAME.github.io/YOUR_REPO/articles/2026-02-02-notepad-hijacked-by-state-sponsored-hackers.html" />
+  
+
+  <meta property="og:title" content="Notepad++ Hijacked by State-Sponsored Hackers — Content Generator" />
+  <meta property="og:description" content="A curated Reddit trend with commentary, takeaways, ranking, and new links." />
+  
+  <meta property="og:url" content="https://YOUR_USERNAME.github.io/YOUR_REPO/articles/2026-02-02-notepad-hijacked-by-state-sponsored-hackers.html" />
+  
+  <meta property="og:type" content="article" />
+
+  
+  
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFS7X77BN2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XFS7X77BN2');
+  </script>
+</head>
+
+<body>
+  <div class="bg-grid"></div>
+  <div id="particles" aria-hidden="true"></div>
+<!-- Monetag In-Page Push (load once) -->
+<script>
+window.__ads_debug = window.__ads_debug ?? { enabled: true };
+(function(s){
+  if (window.__monetag_loaded) return;
+  window.__monetag_loaded = true;
+  if (window.__ads_debug.enabled) {
+    console.log('[ADS] Monetag init', Date.now());
+  }
+  s.dataset.zone='10551684';
+  s.src='https://nap5k.com/tag.min.js';
+})(document.body.appendChild(document.createElement('script')));
+</script>
+
+  <header class="topbar">
+    <a class="brand" href="/">Content Generator</a>
+    <nav class="nav">
+      <a class="btn" href="/#new">New</a>
+      <a class="btn" href="/#ranking">Ranking</a>
+      <a class="btn" href="/about.html">About</a>
+      <a class="btn" href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="ad-slot ad-top">
+      
+    </section>
+
+    
+  <article class="card article">
+    <div class="article-top">
+      <div class="kicker">r/ · score  · comments </div>
+      <h1 class="h1">Notepad++ Hijacked by State-Sponsored Hackers</h1>
+      
+
+
+<section class="ad-slot ad-mid" data-ad-slot="mid">
+  
+</section>
+
+<div class="meta-row">
+
+      <div class="meta-row">
+        <a class="source" href="https://www.reddit.com/r/technology/comments/1qtqfw4/notepad_hijacked_by_statesponsored_hackers/" rel="nofollow noopener" target="_blank">Open source (Reddit)</a>
+        <span class="dot">•</span>
+        <span class="muted">Published 2026-02-02T09:35:33+00:00</span>
+      </div>
+
+      <div class="cta-row">
+        <a class="chip" href="#related">Related</a>
+        <a class="chip" href="#ranking">Ranking</a>
+        <a class="chip" href="#new">New</a>
+        <a class="chip" href="#policy">Policy</a>
+      </div>
+    </div>
+
+    <div class="ad-slot ad-mid">
+      
+    </div>
+
+    <div class="article-body">
+      <p>A trusted tool for millions of developers and writers has reportedly become the latest vector for a sophisticated cyberattack, raising alarms about software supply chain security.</p>
+
+<h2>What Happened</h2>
+<p>According to reports, the official website of Notepad++, a popular free source code and text editor, was compromised. The attackers, believed to be a state-sponsored group, managed to modify the software's download links to point to a malicious server. This meant users attempting to download Notepad++ from its legitimate site were instead served a tampered installer containing malware.</p>
+<p>The malware, described as a sophisticated backdoor, was designed to steal sensitive information from the infected systems. It's currently unclear how long the website was compromised or the exact number of users affected, though the software's widespread use suggests the potential scale is significant. The maintainers of Notepad++ have since regained control and are urging users to verify downloads.</p>
+
+<h2>Why People Care</h2>
+<p>This incident strikes a nerve because it exploits a fundamental trust relationship. Notepad++ is not obscure software; it's a cornerstone utility in many tech stacks, used by professionals and hobbyists alike. The breach demonstrates that even well-established, reputable open-source projects are not immune to high-level attacks targeting their distribution channels.</p>
+<p>Furthermore, the suspected state-sponsored nature of the attack shifts the motive from financial crime to potential espionage. The targets likely extend beyond individual users to the companies and projects those users work for, making data theft from developers a critical national and economic security concern. It underscores how software supply chains have become a primary battlefield in cyber warfare.</p>
+
+<h2>Practical Takeaways</h2>
+<ul>
+<li>Always verify file checksums (SHA-256) against the official project's published values after downloading any critical software, especially after a known breach.</li>
+<li>Be extra cautious with download links, even on legitimate sites. If a download prompt seems unusual, pause and check the developer's official communication channels.</li>
+<li>Consider using package managers (like winget or chocolatey on Windows) for installation when possible, as they can provide an additional layer of verification.</li>
+<li>Keep your security software updated and ensure it scans all new installations.</li>
+<li>Monitor official project blogs or forums for any security announcements related to the tools you depend on.</li>
+</ul>
+
+<p>Staying secure often means being proactive about where you get your software. Just as verifying downloads is crucial, being savvy about where you shop online can protect your finances and data. Finding trusted sources and legitimate discounts is a key part of safe digital life.</p>
+<p>Speaking of trusted deals, for our readers looking for verified savings on their next purchase, keeping an eye out for official coupon codes like "CHEGUEIOPAQUE" for a 10% discount can be a smart move. It pays to get your software—and your shopping deals—from the right place.</p>
+
+<p>This breach is a stark reminder that in today's digital ecosystem, vigilance is the price of security, no matter how trusted the source appears to be.</p>
+
+<section class="card affiliate">
+  <div class="card-h">
+    <div><strong>Recommended (matched to this story)</strong></div>
+    <div class="muted">Category: general</div>
+  </div>
+
+  
+
+  <div class="ad-slot ad-affiliate">
+    <a href="https://click.linksynergy.com/link?id=ksxm8EWJoFA&offerid=596027.4253614052270084&type=2&murl=https%3a%2f%2fwww.edureka.co%2ftesting-with-selenium-webdriver&LSNSUBSITE=LSNSUBSITE" target="_blank" rel="nofollow noopener"><img border="0" src="https://d1jnx9ba8s6j9r.cloudfront.net/imgver.1551437392/img/co_img_535_1529999716.png" alt="Edureka Selenium"></a><img border="0" width="1" height="1" alt="" src="https://ad.linksynergy.com/fs-bin/show?id=ksxm8EWJoFA&bids=596027.4253614052270084&type=2&subid=0">
+  </div>
+
+  <div class="cta-row">
+    <a class="pill" href="https://content_generator.mikanntool.com/go?ad=edureka-selenium-webdriver-001&a=2026-02-02-notepad-hijacked-by-state-sponsored-hackers" rel="nofollow sponsored noopener" target="_blank">
+      View offer
+    </a>
+  </div>
+</section>
+
+    </div>
+  </article>
+
+  <section id="related" class="card">
+    <div class="card-h">
+      <h2 class="h2">Related Articles</h2>
+      <span class="muted">based on title similarity</span>
+    </div>
+    <ul class="list">
+      
+        <li class="li">
+          <a href="/articles/2026-02-01-right-to-compute-laws-may-be-coming-to-your-state-this-year.html">&#39;Right-to-Compute&#39; Laws May Be Coming to Your State This Year</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+    </ul>
+  </section>
+
+  <section id="ranking" class="card">
+    <div class="card-h">
+      <h2 class="h2">Ranking</h2>
+      <span class="muted">Top 10</span>
+    </div>
+    <ol class="olist">
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-ios-26-2-1-update-crippling-iphones-critical-bugs-exposed-immediate-fixes.html">iOS 26.2.1 Update Crippling iPhones: Critical Bugs Exposed &amp; Immediate Fixes</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-microsoft-teams-google-meet-integration-critical-security-cost-risks-for-it-lead.html">Microsoft Teams &amp; Google Meet Integration: Critical Security &amp; Cost Risks for IT Leaders</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-pinterest-fires-engineers-for-fired-worker-tool-your-company-s-data-is-the-next-.html">Pinterest Fires Engineers for &#34;Fired Worker&#34; Tool: Your Company&#39;s Data is the Next Target</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-your-wifi-router-is-now-a-spy-here-s-how-to-stop-it-before-it-s-too-late.html">Your WiFi Router is Now a Spy. Here&#39;s How to Stop It Before It&#39;s Too Late.</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-your-phone-is-a-money-pit-the-fairphone-6-exposes-the-1000-android-tax-you-re-pa.html">Your Phone is a Money Pit: The Fairphone 6 Exposes the $1,000+ Android Tax You&#39;re Paying for Planned Obsolescence</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-sudo-maintainer-crisis-the-hidden-security-risk-in-every-linux-server-right-now.html">Sudo Maintainer Crisis: The Hidden Security Risk in Every Linux Server Right Now</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-ai-companions-are-good-for-you-new-princeton-study-flips-the-script-here-s-who-w.html">AI Companions Are Good For You? New Princeton Study Flips The Script - Here&#39;s Who Wins &amp; Who Loses</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-2026-olympics-tech-leak-your-security-data-and-business-are-already-being-scored.html">2026 Olympics Tech Leak: Your Security, Data, and Business Are Already Being Scored</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-1-5-million-ai-bots-are-socializing-your-business-data-is-their-target.html">1.5 Million AI Bots Are Socializing. Your Business Data Is Their Target.</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-pinterest-ceo-fires-employees-for-tracking-layoffs-your-job-security-just-got-re.html">Pinterest CEO Fires Employees for Tracking Layoffs: Your Job Security Just Got Redefined</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+    </ol>
+  </section>
+
+  <section id="new" class="card">
+    <div class="card-h">
+      <h2 class="h2">New Articles</h2>
+      <span class="muted">Latest 10</span>
+    </div>
+    <ul class="list">
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-ios-26-2-1-update-crippling-iphones-critical-bugs-exposed-immediate-fixes.html">iOS 26.2.1 Update Crippling iPhones: Critical Bugs Exposed &amp; Immediate Fixes</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-microsoft-teams-google-meet-integration-critical-security-cost-risks-for-it-lead.html">Microsoft Teams &amp; Google Meet Integration: Critical Security &amp; Cost Risks for IT Leaders</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-pinterest-fires-engineers-for-fired-worker-tool-your-company-s-data-is-the-next-.html">Pinterest Fires Engineers for &#34;Fired Worker&#34; Tool: Your Company&#39;s Data is the Next Target</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-your-wifi-router-is-now-a-spy-here-s-how-to-stop-it-before-it-s-too-late.html">Your WiFi Router is Now a Spy. Here&#39;s How to Stop It Before It&#39;s Too Late.</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-your-phone-is-a-money-pit-the-fairphone-6-exposes-the-1000-android-tax-you-re-pa.html">Your Phone is a Money Pit: The Fairphone 6 Exposes the $1,000+ Android Tax You&#39;re Paying for Planned Obsolescence</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-sudo-maintainer-crisis-the-hidden-security-risk-in-every-linux-server-right-now.html">Sudo Maintainer Crisis: The Hidden Security Risk in Every Linux Server Right Now</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-ai-companions-are-good-for-you-new-princeton-study-flips-the-script-here-s-who-w.html">AI Companions Are Good For You? New Princeton Study Flips The Script - Here&#39;s Who Wins &amp; Who Loses</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-2026-olympics-tech-leak-your-security-data-and-business-are-already-being-scored.html">2026 Olympics Tech Leak: Your Security, Data, and Business Are Already Being Scored</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-1-5-million-ai-bots-are-socializing-your-business-data-is-their-target.html">1.5 Million AI Bots Are Socializing. Your Business Data Is Their Target.</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-pinterest-ceo-fires-employees-for-tracking-layoffs-your-job-security-just-got-re.html">Pinterest CEO Fires Employees for Tracking Layoffs: Your Job Security Just Got Redefined</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+    </ul>
+  </section>
+
+  <section id="policy" class="card policy">
+    <p><strong>Policy & Transparency (to stay search-friendly)</strong></p>
+<ul>
+  <li><strong>Source & attribution:</strong> Each post is based on a public Reddit RSS item. We always link to the original Reddit post and do not claim ownership of third-party content.</li>
+  <li><strong>Original value:</strong> We add commentary, context, and takeaways. If something is uncertain, we label it as speculation rather than stating it as fact.</li>
+  <li><strong>No manipulation:</strong> No cloaking, hidden text, doorway pages, or misleading metadata. Titles and summaries reflect the on-page content.</li>
+  <li><strong>Safety filters:</strong> We skip obvious adult/self-harm/gore keywords and avoid NSFW feeds.</li>
+  <li><strong>Ads:</strong> Third-party scripts may show ads we do not directly control. If you see problematic ads, contact us and we will adjust providers/placement.</li>
+  <li><strong>Removal requests:</strong> If you believe content should be removed (copyright, personal data, etc.), email us with the URL and justification.</li>
+</ul>
+<p>Contact: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+  </section>
+
+
+    <section class="ad-slot ad-bottom">
+      
+    </section>
+
+    <footer class="footer">
+      <div class="foot-links">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/disclaimer.html">Disclaimer</a>
+      </div>
+      <div class="foot-meta">
+        <span>Updated: 2026-02-04T13:29:58+00:00</span>
+        <span>·</span>
+        <span><a href="mailto:your-email@example.com">your-email@example.com</a></span>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

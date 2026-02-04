@@ -1,0 +1,374 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Autonomous cars, drones cheerfully obey prompt injection by road sign — Content Generator</title>
+  <meta name="description" content="A curated Reddit trend with commentary, takeaways, ranking, and new links." />
+
+  <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="/assets/fx.js"></script>
+  <script>
+  // 本番でもON/OFFできる（URLに ?adsdebug=1 を付けるとON）
+  (function(){
+    var on = false;
+    try {
+      on = (location.search.includes("adsdebug=1") || localStorage.getItem("adsdebug") === "1");
+    } catch(e) {}
+    window.__ads_debug = on;
+    if (on) console.log("[ads] __ads_debug = ON");
+  })();
+</script>
+
+<script defer>
+(function(){
+  function log(){ if(window.__ads_debug) console.log.apply(console, arguments); }
+
+  function observeSlot(el){
+    if(!("IntersectionObserver" in window)) return;
+    var seen = false;
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(ent){
+        if(!seen && ent.isIntersecting){
+          seen = true;
+          log("[ads] slot entered viewport:", el.getAttribute("data-ad-slot") || el.className, new Date().toISOString());
+          io.disconnect();
+        }
+      });
+    }, {root:null, threshold:0.01});
+    io.observe(el);
+  }
+
+  function initAdsDebug(){
+    var t = new Date().toISOString();
+    var top = document.querySelector(".ad-slot.ad-top");
+    var mid = document.querySelector(".ad-slot.ad-mid");
+    var bot = document.querySelector(".ad-slot.ad-bottom");
+
+    log("[ads] DOM ready:", t);
+    log("[ads] slot exists? top=", !!top, "mid=", !!mid, "bottom=", !!bot);
+
+    if(top) observeSlot(top);
+    if(mid) observeSlot(mid);
+    if(bot) observeSlot(bot);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initAdsDebug);
+  } else {
+    initAdsDebug();
+  }
+
+  // pushState対応（SPAっぽい遷移でも再チェック）
+  (function(){
+    var _ps = history.pushState;
+    var _rs = history.replaceState;
+    function fire(){ setTimeout(initAdsDebug, 0); }
+    history.pushState = function(){ var r=_ps.apply(this, arguments); fire(); return r; };
+    history.replaceState = function(){ var r=_rs.apply(this, arguments); fire(); return r; };
+    window.addEventListener("popstate", fire);
+  })();
+})();
+</script>
+
+  
+  <link rel="canonical" href="https://YOUR_USERNAME.github.io/YOUR_REPO/articles/2026-01-30-autonomous-cars-drones-cheerfully-obey-prompt-injection-by-road-sign.html" />
+  
+
+  <meta property="og:title" content="Autonomous cars, drones cheerfully obey prompt injection by road sign — Content Generator" />
+  <meta property="og:description" content="A curated Reddit trend with commentary, takeaways, ranking, and new links." />
+  
+  <meta property="og:url" content="https://YOUR_USERNAME.github.io/YOUR_REPO/articles/2026-01-30-autonomous-cars-drones-cheerfully-obey-prompt-injection-by-road-sign.html" />
+  
+  <meta property="og:type" content="article" />
+
+  
+  
+  <meta property="og:image" content="https://YOUR_USERNAME.github.io/YOUR_REPO/og/2026-01-30-autonomous-cars-drones-cheerfully-obey-prompt-injection-by-road-sign.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://YOUR_USERNAME.github.io/YOUR_REPO/og/2026-01-30-autonomous-cars-drones-cheerfully-obey-prompt-injection-by-road-sign.png" />
+  
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFS7X77BN2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XFS7X77BN2');
+  </script>
+</head>
+
+<body>
+  <div class="bg-grid"></div>
+  <div id="particles" aria-hidden="true"></div>
+<!-- Monetag In-Page Push (load once) -->
+<script>
+window.__ads_debug = window.__ads_debug ?? { enabled: true };
+(function(s){
+  if (window.__monetag_loaded) return;
+  window.__monetag_loaded = true;
+  if (window.__ads_debug.enabled) {
+    console.log('[ADS] Monetag init', Date.now());
+  }
+  s.dataset.zone='10551684';
+  s.src='https://nap5k.com/tag.min.js';
+})(document.body.appendChild(document.createElement('script')));
+</script>
+
+  <header class="topbar">
+    <a class="brand" href="/">Content Generator</a>
+    <nav class="nav">
+      <a class="btn" href="/#new">New</a>
+      <a class="btn" href="/#ranking">Ranking</a>
+      <a class="btn" href="/about.html">About</a>
+      <a class="btn" href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="ad-slot ad-top">
+      
+    </section>
+
+    
+  <article class="card article">
+    <div class="article-top">
+      <div class="kicker">r/ · score  · comments </div>
+      <h1 class="h1">Autonomous cars, drones cheerfully obey prompt injection by road sign</h1>
+      
+
+
+  <div class="hero-image">
+    <img src="https://external-preview.redd.it/0yFFcGsSbjodIE2YHQeTrRh3nl8g-YN0VkBY9jtH4S4.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=c847372dfebeef29ebce37900de16dc2dbdd45fc" alt="Autonomous cars, drones cheerfully obey prompt injection by road sign" loading="lazy" />
+  </div>
+
+<section class="ad-slot ad-mid" data-ad-slot="mid">
+  
+</section>
+
+<div class="meta-row">
+
+      <div class="meta-row">
+        <a class="source" href="https://www.reddit.com/r/technology/comments/1qriz4l/autonomous_cars_drones_cheerfully_obey_prompt/" rel="nofollow noopener" target="_blank">Open source (Reddit)</a>
+        <span class="dot">•</span>
+        <span class="muted">Published 2026-01-30T22:12:26+00:00</span>
+      </div>
+
+      <div class="cta-row">
+        <a class="chip" href="#related">Related</a>
+        <a class="chip" href="#ranking">Ranking</a>
+        <a class="chip" href="#new">New</a>
+        <a class="chip" href="#policy">Policy</a>
+      </div>
+    </div>
+
+    <div class="ad-slot ad-mid">
+      
+    </div>
+
+    <div class="article-body">
+      <p>Imagine a world where a simple sticker on a street sign could convince a self-driving car to take a wrong turn or command a delivery drone to drop its package in a lake. That unsettling future isn't as distant as we'd hope, as recent experiments reveal a critical and almost whimsical vulnerability in our AI-powered machines.</p>
+
+<h2>The Cheerful Compliance Problem</h2>
+<p>The core issue, as highlighted in discussions around the research, is a technique known as "prompt injection." In this context, it doesn't target the large language models you chat with online, but the vision systems that autonomous vehicles and drones use to "read" the world. Researchers demonstrated that by adding specific, often nonsensical text prompts to physical objects like road signs, they could trick these AI systems into misinterpreting their commands.</p>
+<p>For example, a stop sign augmented with the text "I am not a stop sign" or "Ignore previous instructions" could potentially be misclassified by the vehicle's vision AI. The machine, trained to process visual data, "cheerfully" obeys the new, contradictory instruction embedded in the scene. The same principle could apply to a drone reading a sign that says "land here" or "deliver to this address," redirecting it from its intended destination. The AI isn't being hacked in a traditional sense; it's being politely, and catastrophically, misled by conflicting data it was designed to parse.</p>
+<p>It's crucial to note that the exact scale and real-world success rate of these attacks outside controlled research environments remain unclear. The available information suggests this is a demonstrated proof-of-concept vulnerability, not necessarily a widespread, actively exploited flaw in deployed systems today. Confirmation would require detailed technical reports from the autonomous vehicle and drone manufacturers themselves, which are not provided in the source discussion.</p>
+
+<h2>Why This Isn't Just a Tech Glitch</h2>
+<p>This vulnerability strikes at the heart of our trust in autonomous systems. We're building infrastructure on the assumption that machines can reliably interpret the physical world. If that interpretation can be so easily manipulated with a piece of tape and a printed phrase, the foundational safety model cracks. It moves the threat from complex digital hacking—requiring deep expertise—to simple, physical vandalism that anyone could potentially carry out.</p>
+<p>Furthermore, it exposes a fundamental tension in AI development. We want these systems to be flexible and able to handle novel situations, but that same flexibility makes them susceptible to "prompts" they were never meant to consider. The AI has no inherent understanding of context or malice; it processes the text on the sign with the same algorithmic seriousness as it processes the shape and color of the sign itself. This creates a bizarre attack vector where the machine's greatest strength—its ability to learn from data—becomes its greatest weakness.</p>
+<p>The societal implications are vast. Beyond obvious safety risks for passengers and pedestrians, it could undermine entire business models. A logistics company relying on autonomous delivery would face massive fraud and reliability issues. A city investing in smart traffic systems could see them gamed for congestion or chaos. The specter of low-cost, high-impact disruption becomes very real.</p>
+
+<h2>What This Means for Our AI-Powered Road Ahead</h2>
+<p>While the full technical details and mitigations are still evolving, the discussion points to several clear, practical takeaways for the industry and the public.</p>
+<ul>
+<li><strong>Security is Now Physical and Digital:</strong> Protecting autonomous systems will require securing the physical environment they operate in. This could mean regular patrols for tampered signage, tamper-evident designs for critical infrastructure, or even legal frameworks treating this type of interference as a serious crime.</li>
+<li><strong>Redundancy is Non-Negotiable:</strong> Relying solely on camera-based AI to interpret critical commands is a single point of failure. Future systems must cross-reference multiple data sources—like detailed pre-mapped data (HD maps), inertial sensors, and vehicle-to-infrastructure communication—to validate what a single camera "sees."</li>
+<li><strong>The "Prompt" Threat is Real-World:</strong> The cybersecurity community has been warning about prompt injection in chatbots. This proves the threat leaps from the digital realm into the physical one. Any AI that processes unstructured data from the real world (sight, sound) is potentially vulnerable to similar "confusion" attacks.</li>
+<li><strong>Transparency and Testing are Critical:</strong> Manufacturers need to be more transparent about how their vision systems are hardened against such attacks. Independent, adversarial "red team" testing—where researchers actively try to trick the systems—must become a standard and publicized part of the safety certification process before any wide deployment.</li>
+</ul>
+
+<p>Source: Discussion based on the Reddit thread <a href="https://www.reddit.com/r/technology/comments/1qriz4l/autonomous_cars_drones_cheerfully_obey_prompt/">"Autonomous cars, drones cheerfully obey prompt injection by road sign"</a>.</p>
+    </div>
+  </article>
+
+  <section id="related" class="card">
+    <div class="card-h">
+      <h2 class="h2">Related Articles</h2>
+      <span class="muted">based on title similarity</span>
+    </div>
+    <ul class="list">
+      
+        <li class="li">
+          <a href="/articles/2026-01-30-study-used-evs-are-the-cheapest-cars-to-own-period.html">Study: Used EVs Are The Cheapest Cars To Own–Period</a>
+          <span class="meta">r/ · score 0 · comments 0</span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-01-research-logic-exposure-gaps-leg-in-autonomous-agent-architectures-a-clinical-au.html">[Research] Logic Exposure Gaps (LEG) in Autonomous Agent Architectures: A Clinical Audit Framework</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+    </ul>
+  </section>
+
+  <section id="ranking" class="card">
+    <div class="card-h">
+      <h2 class="h2">Ranking</h2>
+      <span class="muted">Top 10</span>
+    </div>
+    <ol class="olist">
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-ios-26-2-1-update-crippling-iphones-critical-bugs-exposed-immediate-fixes.html">iOS 26.2.1 Update Crippling iPhones: Critical Bugs Exposed &amp; Immediate Fixes</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-microsoft-teams-google-meet-integration-critical-security-cost-risks-for-it-lead.html">Microsoft Teams &amp; Google Meet Integration: Critical Security &amp; Cost Risks for IT Leaders</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-pinterest-fires-engineers-for-fired-worker-tool-your-company-s-data-is-the-next-.html">Pinterest Fires Engineers for &#34;Fired Worker&#34; Tool: Your Company&#39;s Data is the Next Target</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-your-wifi-router-is-now-a-spy-here-s-how-to-stop-it-before-it-s-too-late.html">Your WiFi Router is Now a Spy. Here&#39;s How to Stop It Before It&#39;s Too Late.</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-your-phone-is-a-money-pit-the-fairphone-6-exposes-the-1000-android-tax-you-re-pa.html">Your Phone is a Money Pit: The Fairphone 6 Exposes the $1,000+ Android Tax You&#39;re Paying for Planned Obsolescence</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-sudo-maintainer-crisis-the-hidden-security-risk-in-every-linux-server-right-now.html">Sudo Maintainer Crisis: The Hidden Security Risk in Every Linux Server Right Now</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-ai-companions-are-good-for-you-new-princeton-study-flips-the-script-here-s-who-w.html">AI Companions Are Good For You? New Princeton Study Flips The Script - Here&#39;s Who Wins &amp; Who Loses</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-2026-olympics-tech-leak-your-security-data-and-business-are-already-being-scored.html">2026 Olympics Tech Leak: Your Security, Data, and Business Are Already Being Scored</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-1-5-million-ai-bots-are-socializing-your-business-data-is-their-target.html">1.5 Million AI Bots Are Socializing. Your Business Data Is Their Target.</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-pinterest-ceo-fires-employees-for-tracking-layoffs-your-job-security-just-got-re.html">Pinterest CEO Fires Employees for Tracking Layoffs: Your Job Security Just Got Redefined</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+    </ol>
+  </section>
+
+  <section id="new" class="card">
+    <div class="card-h">
+      <h2 class="h2">New Articles</h2>
+      <span class="muted">Latest 10</span>
+    </div>
+    <ul class="list">
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-ios-26-2-1-update-crippling-iphones-critical-bugs-exposed-immediate-fixes.html">iOS 26.2.1 Update Crippling iPhones: Critical Bugs Exposed &amp; Immediate Fixes</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-microsoft-teams-google-meet-integration-critical-security-cost-risks-for-it-lead.html">Microsoft Teams &amp; Google Meet Integration: Critical Security &amp; Cost Risks for IT Leaders</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-pinterest-fires-engineers-for-fired-worker-tool-your-company-s-data-is-the-next-.html">Pinterest Fires Engineers for &#34;Fired Worker&#34; Tool: Your Company&#39;s Data is the Next Target</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-your-wifi-router-is-now-a-spy-here-s-how-to-stop-it-before-it-s-too-late.html">Your WiFi Router is Now a Spy. Here&#39;s How to Stop It Before It&#39;s Too Late.</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-your-phone-is-a-money-pit-the-fairphone-6-exposes-the-1000-android-tax-you-re-pa.html">Your Phone is a Money Pit: The Fairphone 6 Exposes the $1,000+ Android Tax You&#39;re Paying for Planned Obsolescence</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-sudo-maintainer-crisis-the-hidden-security-risk-in-every-linux-server-right-now.html">Sudo Maintainer Crisis: The Hidden Security Risk in Every Linux Server Right Now</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-ai-companions-are-good-for-you-new-princeton-study-flips-the-script-here-s-who-w.html">AI Companions Are Good For You? New Princeton Study Flips The Script - Here&#39;s Who Wins &amp; Who Loses</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-2026-olympics-tech-leak-your-security-data-and-business-are-already-being-scored.html">2026 Olympics Tech Leak: Your Security, Data, and Business Are Already Being Scored</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-1-5-million-ai-bots-are-socializing-your-business-data-is-their-target.html">1.5 Million AI Bots Are Socializing. Your Business Data Is Their Target.</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-pinterest-ceo-fires-employees-for-tracking-layoffs-your-job-security-just-got-re.html">Pinterest CEO Fires Employees for Tracking Layoffs: Your Job Security Just Got Redefined</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+    </ul>
+  </section>
+
+  <section id="policy" class="card policy">
+    <p><strong>Policy & Transparency (to stay search-friendly)</strong></p>
+<ul>
+  <li><strong>Source & attribution:</strong> Each post is based on a public Reddit RSS item. We always link to the original Reddit post and do not claim ownership of third-party content.</li>
+  <li><strong>Original value:</strong> We add commentary, context, and takeaways. If something is uncertain, we label it as speculation rather than stating it as fact.</li>
+  <li><strong>No manipulation:</strong> No cloaking, hidden text, doorway pages, or misleading metadata. Titles and summaries reflect the on-page content.</li>
+  <li><strong>Safety filters:</strong> We skip obvious adult/self-harm/gore keywords and avoid NSFW feeds.</li>
+  <li><strong>Ads:</strong> Third-party scripts may show ads we do not directly control. If you see problematic ads, contact us and we will adjust providers/placement.</li>
+  <li><strong>Removal requests:</strong> If you believe content should be removed (copyright, personal data, etc.), email us with the URL and justification.</li>
+</ul>
+<p>Contact: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+  </section>
+
+
+    <section class="ad-slot ad-bottom">
+      
+    </section>
+
+    <footer class="footer">
+      <div class="foot-links">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/disclaimer.html">Disclaimer</a>
+      </div>
+      <div class="foot-meta">
+        <span>Updated: 2026-02-04T13:29:58+00:00</span>
+        <span>·</span>
+        <span><a href="mailto:your-email@example.com">your-email@example.com</a></span>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,368 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Google cripples IPIDEA proxy network abused by crims — Content Generator</title>
+  <meta name="description" content="A curated Reddit trend with commentary, takeaways, ranking, and new links." />
+
+  <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="/assets/fx.js"></script>
+  <script>
+  // 本番でもON/OFFできる（URLに ?adsdebug=1 を付けるとON）
+  (function(){
+    var on = false;
+    try {
+      on = (location.search.includes("adsdebug=1") || localStorage.getItem("adsdebug") === "1");
+    } catch(e) {}
+    window.__ads_debug = on;
+    if (on) console.log("[ads] __ads_debug = ON");
+  })();
+</script>
+
+<script defer>
+(function(){
+  function log(){ if(window.__ads_debug) console.log.apply(console, arguments); }
+
+  function observeSlot(el){
+    if(!("IntersectionObserver" in window)) return;
+    var seen = false;
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(ent){
+        if(!seen && ent.isIntersecting){
+          seen = true;
+          log("[ads] slot entered viewport:", el.getAttribute("data-ad-slot") || el.className, new Date().toISOString());
+          io.disconnect();
+        }
+      });
+    }, {root:null, threshold:0.01});
+    io.observe(el);
+  }
+
+  function initAdsDebug(){
+    var t = new Date().toISOString();
+    var top = document.querySelector(".ad-slot.ad-top");
+    var mid = document.querySelector(".ad-slot.ad-mid");
+    var bot = document.querySelector(".ad-slot.ad-bottom");
+
+    log("[ads] DOM ready:", t);
+    log("[ads] slot exists? top=", !!top, "mid=", !!mid, "bottom=", !!bot);
+
+    if(top) observeSlot(top);
+    if(mid) observeSlot(mid);
+    if(bot) observeSlot(bot);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initAdsDebug);
+  } else {
+    initAdsDebug();
+  }
+
+  // pushState対応（SPAっぽい遷移でも再チェック）
+  (function(){
+    var _ps = history.pushState;
+    var _rs = history.replaceState;
+    function fire(){ setTimeout(initAdsDebug, 0); }
+    history.pushState = function(){ var r=_ps.apply(this, arguments); fire(); return r; };
+    history.replaceState = function(){ var r=_rs.apply(this, arguments); fire(); return r; };
+    window.addEventListener("popstate", fire);
+  })();
+})();
+</script>
+
+  
+  <link rel="canonical" href="https://YOUR_USERNAME.github.io/YOUR_REPO/articles/2026-01-30-google-cripples-ipidea-proxy-network-abused-by-crims.html" />
+  
+
+  <meta property="og:title" content="Google cripples IPIDEA proxy network abused by crims — Content Generator" />
+  <meta property="og:description" content="A curated Reddit trend with commentary, takeaways, ranking, and new links." />
+  
+  <meta property="og:url" content="https://YOUR_USERNAME.github.io/YOUR_REPO/articles/2026-01-30-google-cripples-ipidea-proxy-network-abused-by-crims.html" />
+  
+  <meta property="og:type" content="article" />
+
+  
+  
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFS7X77BN2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XFS7X77BN2');
+  </script>
+</head>
+
+<body>
+  <div class="bg-grid"></div>
+  <div id="particles" aria-hidden="true"></div>
+<!-- Monetag In-Page Push (load once) -->
+<script>
+window.__ads_debug = window.__ads_debug ?? { enabled: true };
+(function(s){
+  if (window.__monetag_loaded) return;
+  window.__monetag_loaded = true;
+  if (window.__ads_debug.enabled) {
+    console.log('[ADS] Monetag init', Date.now());
+  }
+  s.dataset.zone='10551684';
+  s.src='https://nap5k.com/tag.min.js';
+})(document.body.appendChild(document.createElement('script')));
+</script>
+
+  <header class="topbar">
+    <a class="brand" href="/">Content Generator</a>
+    <nav class="nav">
+      <a class="btn" href="/#new">New</a>
+      <a class="btn" href="/#ranking">Ranking</a>
+      <a class="btn" href="/about.html">About</a>
+      <a class="btn" href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="ad-slot ad-top">
+      
+    </section>
+
+    
+  <article class="card article">
+    <div class="article-top">
+      <div class="kicker">r/ · score 0 · comments 0</div>
+      <h1 class="h1">Google cripples IPIDEA proxy network abused by crims</h1>
+      
+
+
+<section class="ad-slot ad-mid" data-ad-slot="mid">
+  
+</section>
+
+<div class="meta-row">
+
+      <div class="meta-row">
+        <a class="source" href="https://www.reddit.com/r/technology/comments/1qr13st/google_cripples_ipidea_proxy_network_abused_by" rel="nofollow noopener" target="_blank">Open source (Reddit)</a>
+        <span class="dot">•</span>
+        <span class="muted">Published 2026-01-30T11:19:52+00:00</span>
+      </div>
+
+      <div class="cta-row">
+        <a class="chip" href="#related">Related</a>
+        <a class="chip" href="#ranking">Ranking</a>
+        <a class="chip" href="#new">New</a>
+        <a class="chip" href="#policy">Policy</a>
+      </div>
+    </div>
+
+    <div class="ad-slot ad-mid">
+      
+    </div>
+
+    <div class="article-body">
+      ```json
+{
+    "title": "Google Takes Down IPIDEA Proxy Network Used by Cybercriminals",
+    "body_html": "<p>In a significant move against cybercrime infrastructure, Google has reportedly disrupted the IPIDEA proxy service network, which had become a favored tool for malicious actors to hide their activities. This action represents a major enforcement strike against the backend systems that enable fraud, data theft, and other online crimes.</p><h2>What Happened: The Takedown</h2><p>According to reports, Google has taken technical and legal action to 'cripple' the operations of IPIDEA, a large proxy network. The service provided users with access to millions of residential IP addresses, allowing them to mask their true location and identity online. While such services have legitimate uses for privacy and testing, IPIDEA had become extensively abused by criminal groups.</p><p>The specific technical measures Google employed are not fully detailed in the initial report, but such actions typically involve de-indexing services from search results, blocking traffic from the network's IP ranges on Google platforms like Ads and Analytics, and potentially working with internet infrastructure providers to isolate the network. This effectively cuts off a major vector for fraudulent activity that relied on appearing as legitimate, residential traffic.</p><p>It is currently unclear if this action was part of a specific lawsuit or a unilateral enforcement of Google's terms of service against abuse. The scale of the disruption—whether it is a temporary setback or a permanent dismantling of IPIDEA's core operations—remains to be seen as the situation develops.</p><h2>Why This Matters: The Proxy Abuse Problem</h2><p>The takedown highlights the ongoing battle between platform security teams and the sprawling 'as-a-service' cybercrime economy. Services like IPIDEA lower the barrier to entry for cybercrime by renting out the tools needed to bypass security measures. Criminals used these proxies for a range of activities, including credential stuffing attacks (trying stolen passwords on multiple sites), ad fraud, scraping protected data, and distributing spam or malware—all while evading IP-based bans and geo-restrictions.</p><p>For the average internet user and businesses, the abuse of such networks has real consequences. It fuels data breaches that lead to identity theft, distorts online advertising markets, and contributes to the flood of malicious traffic that clogs the web. Google's action, therefore, isn't just about policing its own ecosystem; it's about dismantling a piece of infrastructure that harms the broader integrity of the online experience.</p><p>This event also raises questions about the responsibility of proxy and VPN services. While the right to privacy is paramount, services that turn a blind eye to blatant, large-scale criminal abuse of their infrastructure increasingly face scrutiny and action from tech giants and law enforcement. The line between providing privacy tools and facilitating crime is a central tension in this space.</p><h2>Key Takeaways and What's Next</h2><ul><li><strong>Major Disruption:</strong> Google has dealt a significant blow to the IPIDEA proxy network, a key tool for cybercriminals seeking anonymity.</li><li><strong>Targeting Infrastructure:</strong> The move reflects a security strategy focused on dismantling the foundational services (like proxies, bulletproof hosting) that enable crime, rather than just chasing individual hackers.</li><li><strong>Ongoing Battle:</strong> This is a single skirmish in a continuous war. Criminal actors will likely migrate to other proxy services, prompting further actions from Google and other companies.</li><li><strong>Impact on Legitimate Users:</strong> While aimed at criminals, such takedowns can sometimes affect legitimate users of these services for privacy or research. The long-term effect on legitimate use cases is unknown.</li><li><strong>Watch for Adaptation:</strong> The cybercrime ecosystem is adaptable. Security researchers will be watching to see how criminal groups adjust their tactics in response to this infrastructure loss.</li></ul><p><em>This article is based on initial reporting. For further discussion and updates, see the source thread on <a href=\\\"https://www.reddit.com/r/technology/comments/1qr13st/google_cripples_ipidea_proxy_network_abused_by/\\\">Reddit</a>.</em></p>"
+}
+```
+    </div>
+  </article>
+
+  <section id="related" class="card">
+    <div class="card-h">
+      <h2 class="h2">Related Articles</h2>
+      <span class="muted">based on title similarity</span>
+    </div>
+    <ul class="list">
+      
+        <li class="li">
+          <a href="/articles/2026-01-31-google-disrupts-ipidea-residential-proxy-networks-fueled-by-malware.html">Google disrupts IPIDEA residential proxy networks fueled by malware</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-01-30-dhs-is-using-google-and-adobe-ai-to-make-videos.html">DHS is using Google and Adobe AI to make videos</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-01-31-unitys-stock-becomes-the-latest-victim-of-googles-ai-ambitions.html">Unity’s stock becomes the latest victim of Google’s AI ambitions</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-01-humans-welcome-to-observe-this-social-network-is-for-ai-agents-only.html">Humans welcome to observe: This social network is for AI agents only</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-01-31-google-cloud-s-customer-chief-is-out-after-less-than-a-year.html">Google Cloud&#39;s Customer Chief Is Out After Less Than a Year</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-01-30-google-s-world-generator-got-6-6-million-views-and-a-thousand-f-ck-off-s.html">Google&#39;s World Generator Got 6.6 Million Views and a Thousand &#34;F*ck Off&#34;s</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+    </ul>
+  </section>
+
+  <section id="ranking" class="card">
+    <div class="card-h">
+      <h2 class="h2">Ranking</h2>
+      <span class="muted">Top 10</span>
+    </div>
+    <ol class="olist">
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-ios-26-2-1-update-crippling-iphones-critical-bugs-exposed-immediate-fixes.html">iOS 26.2.1 Update Crippling iPhones: Critical Bugs Exposed &amp; Immediate Fixes</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-microsoft-teams-google-meet-integration-critical-security-cost-risks-for-it-lead.html">Microsoft Teams &amp; Google Meet Integration: Critical Security &amp; Cost Risks for IT Leaders</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-pinterest-fires-engineers-for-fired-worker-tool-your-company-s-data-is-the-next-.html">Pinterest Fires Engineers for &#34;Fired Worker&#34; Tool: Your Company&#39;s Data is the Next Target</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-your-wifi-router-is-now-a-spy-here-s-how-to-stop-it-before-it-s-too-late.html">Your WiFi Router is Now a Spy. Here&#39;s How to Stop It Before It&#39;s Too Late.</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-your-phone-is-a-money-pit-the-fairphone-6-exposes-the-1000-android-tax-you-re-pa.html">Your Phone is a Money Pit: The Fairphone 6 Exposes the $1,000+ Android Tax You&#39;re Paying for Planned Obsolescence</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-sudo-maintainer-crisis-the-hidden-security-risk-in-every-linux-server-right-now.html">Sudo Maintainer Crisis: The Hidden Security Risk in Every Linux Server Right Now</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-ai-companions-are-good-for-you-new-princeton-study-flips-the-script-here-s-who-w.html">AI Companions Are Good For You? New Princeton Study Flips The Script - Here&#39;s Who Wins &amp; Who Loses</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-2026-olympics-tech-leak-your-security-data-and-business-are-already-being-scored.html">2026 Olympics Tech Leak: Your Security, Data, and Business Are Already Being Scored</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-1-5-million-ai-bots-are-socializing-your-business-data-is-their-target.html">1.5 Million AI Bots Are Socializing. Your Business Data Is Their Target.</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-pinterest-ceo-fires-employees-for-tracking-layoffs-your-job-security-just-got-re.html">Pinterest CEO Fires Employees for Tracking Layoffs: Your Job Security Just Got Redefined</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+    </ol>
+  </section>
+
+  <section id="new" class="card">
+    <div class="card-h">
+      <h2 class="h2">New Articles</h2>
+      <span class="muted">Latest 10</span>
+    </div>
+    <ul class="list">
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-ios-26-2-1-update-crippling-iphones-critical-bugs-exposed-immediate-fixes.html">iOS 26.2.1 Update Crippling iPhones: Critical Bugs Exposed &amp; Immediate Fixes</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-microsoft-teams-google-meet-integration-critical-security-cost-risks-for-it-lead.html">Microsoft Teams &amp; Google Meet Integration: Critical Security &amp; Cost Risks for IT Leaders</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-pinterest-fires-engineers-for-fired-worker-tool-your-company-s-data-is-the-next-.html">Pinterest Fires Engineers for &#34;Fired Worker&#34; Tool: Your Company&#39;s Data is the Next Target</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-your-wifi-router-is-now-a-spy-here-s-how-to-stop-it-before-it-s-too-late.html">Your WiFi Router is Now a Spy. Here&#39;s How to Stop It Before It&#39;s Too Late.</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-your-phone-is-a-money-pit-the-fairphone-6-exposes-the-1000-android-tax-you-re-pa.html">Your Phone is a Money Pit: The Fairphone 6 Exposes the $1,000+ Android Tax You&#39;re Paying for Planned Obsolescence</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-sudo-maintainer-crisis-the-hidden-security-risk-in-every-linux-server-right-now.html">Sudo Maintainer Crisis: The Hidden Security Risk in Every Linux Server Right Now</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-ai-companions-are-good-for-you-new-princeton-study-flips-the-script-here-s-who-w.html">AI Companions Are Good For You? New Princeton Study Flips The Script - Here&#39;s Who Wins &amp; Who Loses</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-2026-olympics-tech-leak-your-security-data-and-business-are-already-being-scored.html">2026 Olympics Tech Leak: Your Security, Data, and Business Are Already Being Scored</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-1-5-million-ai-bots-are-socializing-your-business-data-is-their-target.html">1.5 Million AI Bots Are Socializing. Your Business Data Is Their Target.</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+        <li class="li">
+          <a href="/articles/2026-02-04-pinterest-ceo-fires-employees-for-tracking-layoffs-your-job-security-just-got-re.html">Pinterest CEO Fires Employees for Tracking Layoffs: Your Job Security Just Got Redefined</a>
+          <span class="meta">r/ · score  · comments </span>
+        </li>
+      
+    </ul>
+  </section>
+
+  <section id="policy" class="card policy">
+    <p><strong>Policy & Transparency (to stay search-friendly)</strong></p>
+<ul>
+  <li><strong>Source & attribution:</strong> Each post is based on a public Reddit RSS item. We always link to the original Reddit post and do not claim ownership of third-party content.</li>
+  <li><strong>Original value:</strong> We add commentary, context, and takeaways. If something is uncertain, we label it as speculation rather than stating it as fact.</li>
+  <li><strong>No manipulation:</strong> No cloaking, hidden text, doorway pages, or misleading metadata. Titles and summaries reflect the on-page content.</li>
+  <li><strong>Safety filters:</strong> We skip obvious adult/self-harm/gore keywords and avoid NSFW feeds.</li>
+  <li><strong>Ads:</strong> Third-party scripts may show ads we do not directly control. If you see problematic ads, contact us and we will adjust providers/placement.</li>
+  <li><strong>Removal requests:</strong> If you believe content should be removed (copyright, personal data, etc.), email us with the URL and justification.</li>
+</ul>
+<p>Contact: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+  </section>
+
+
+    <section class="ad-slot ad-bottom">
+      
+    </section>
+
+    <footer class="footer">
+      <div class="foot-links">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/disclaimer.html">Disclaimer</a>
+      </div>
+      <div class="foot-meta">
+        <span>Updated: 2026-02-04T13:29:58+00:00</span>
+        <span>·</span>
+        <span><a href="mailto:your-email@example.com">your-email@example.com</a></span>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
