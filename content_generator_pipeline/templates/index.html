@@ -1,0 +1,66 @@
+{% set title = site.brand_name ~ " — Daily Trend Digest" %}
+{% set description = "One fresh Reddit trend per day, with commentary + ranking + new links." %}
+{% set canonical = site.base_url.rstrip("/") ~ "/" %}
+{% set content %}
+  <section class="hero">
+    <h1 class="h1">Daily Trend Digest</h1>
+    <p class="sub">One notable Reddit item per day — rewritten with context, takeaways, and clear source links.</p>
+
+    <div class="cta-row">
+      <a class="chip" href="#new">Jump to New</a>
+      <a class="chip" href="#ranking">Jump to Ranking</a>
+    </div>
+  </section>
+
+  <section id="new" class="card">
+    <div class="card-h">
+      <h2 class="h2">New Articles</h2>
+      <span class="muted">Latest 10</span>
+    </div>
+    <ul class="list">
+      {% for a in new_articles %}
+        <li class="li">
+          <a href="{{ a.path }}">{{ a.title }}</a>
+          <span class="meta">r/{{ a.subreddit }} · score {{ a.score }} · comments {{ a.comments }}</span>
+        </li>
+      {% else %}
+        <li class="li muted">No articles yet.</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="ad-slot ad-mid">
+    {{ ads_mid | safe }}
+  </section>
+
+  <section id="ranking" class="card">
+    <div class="card-h">
+      <h2 class="h2">Ranking</h2>
+      <span class="muted">score + 2×comments</span>
+    </div>
+    <ol class="olist">
+      {% for a in ranking %}
+        <li class="li">
+          <a href="{{ a.path }}">{{ a.title }}</a>
+          <span class="meta">r/{{ a.subreddit }} · score {{ a.score }} · comments {{ a.comments }}</span>
+        </li>
+      {% else %}
+        <li class="li muted">No ranking yet.</li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2 class="h2">Policy & Transparency</h2>
+    <p class="muted">
+      We curate public RSS items and add original commentary. No cloaking or hidden text.
+      We link to sources and welcome corrections or removals.
+    </p>
+    <div class="pill-row">
+      <a class="pill" href="/privacy.html">Privacy</a>
+      <a class="pill" href="/terms.html">Terms</a>
+      <a class="pill" href="/disclaimer.html">Disclaimer</a>
+    </div>
+  </section>
+{% endset %}
+{% include "base.html" %}

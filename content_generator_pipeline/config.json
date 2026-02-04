@@ -1,0 +1,41 @@
+{
+  "site": {
+    "brand_name": "Content Generator",
+    "base_url": "https://YOUR_USERNAME.github.io/YOUR_REPO",
+    "contact_email": "your-email@example.com"
+  },
+  "feeds": {
+    "reddit_rss": [
+      "https://www.reddit.com/r/technology/new/.rss",
+      "https://www.reddit.com/r/artificial/new/.rss",
+      "https://www.reddit.com/r/programming/new/.rss"
+    ]
+  },
+  "generation": {
+    "model": "deepseek-chat",
+    "target_words": 900,
+    "temperature": 0.9,
+    "title_prompt": "Create a punchy English headline (60-90 characters). Slightly hyped and future-facing, but do NOT invent facts, numbers, or quotes. It must match the article body and be safe for general audiences. Base it on the source title and context.",
+    "body_prompt": "Write an original English article body in HTML only (<p>, <h2>, <ul><li>). Structure: 1) Hook (1 short paragraph) 2) What happened (2-3 paragraphs) 3) Why people care (2-3 paragraphs) 4) Practical takeaways (bullets) 5) Source line linking to the Reddit permalink. Target length: about {target_words} words. Do not copy; paraphrase and add commentary. If unknown, say what's unknown."
+  },
+  "safety": {
+    "blocked_subreddits": [
+      "nsfw",
+      "porn",
+      "sex",
+      "hentai",
+      "gore",
+      "violence",
+      "selfharm"
+    ],
+    "blocked_keywords": [
+      "nsfw",
+      "porn",
+      "hentai",
+      "onlyfans",
+      "gore",
+      "suicide",
+      "self-harm"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{% set title = page_title ~ " — " ~ site.brand_name %}
+{% set description = page_title %}
+{% set canonical = site.base_url.rstrip("/") ~ "/" %}
+{% set content %}
+  <section class="card">
+    <h1 class="h1">{{ page_title }}</h1>
+    <div class="article-body">
+      {{ page_body | safe }}
+    </div>
+  </section>
+
+  <section class="ad-slot ad-mid">
+    {{ ads_mid | safe }}
+  </section>
+{% endset %}
+{% include "base.html" %}

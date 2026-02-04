@@ -1,0 +1,96 @@
+{% set title = a.title ~ " — " ~ site.brand_name %}
+{% set description = "A curated Reddit trend with commentary, takeaways, ranking, and new links." %}
+{% set canonical = site.base_url.rstrip("/") ~ a.path %}
+{% set content %}
+  <article class="card article">
+    <div class="article-top">
+      <div class="kicker">r/{{ a.subreddit }} · score {{ a.score }} · comments {{ a.comments }}</div>
+      <h1 class="h1">{{ a.title }}</h1>
+      
+
+{% if a.hero_image %}
+  <div class="hero-image">
+    <img src="{{ a.hero_image }}" alt="{{ a.title|e }}" loading="lazy" />
+  </div>
+{% endif %}
+<section class="ad-slot ad-mid" data-ad-slot="mid">
+  {{ ads_mid | safe }}
+</section>
+
+<div class="meta-row">
+
+      <div class="meta-row">
+        <a class="source" href="{{ a.source_url }}" rel="nofollow noopener" target="_blank">Open source (Reddit)</a>
+        <span class="dot">•</span>
+        <span class="muted">Published {{ a.published_ts }}</span>
+      </div>
+
+      <div class="cta-row">
+        <a class="chip" href="#related">Related</a>
+        <a class="chip" href="#ranking">Ranking</a>
+        <a class="chip" href="#new">New</a>
+        <a class="chip" href="#policy">Policy</a>
+      </div>
+    </div>
+
+    <div class="ad-slot ad-mid">
+      {{ ads_mid | safe }}
+    </div>
+
+    <div class="article-body">
+      {{ a.body_html | safe }}
+    </div>
+  </article>
+
+  <section id="related" class="card">
+    <div class="card-h">
+      <h2 class="h2">Related Articles</h2>
+      <span class="muted">based on title similarity</span>
+    </div>
+    <ul class="list">
+      {% for r in related %}
+        <li class="li">
+          <a href="{{ r.path }}">{{ r.title }}</a>
+          <span class="meta">r/{{ r.subreddit }} · score {{ r.score }} · comments {{ r.comments }}</span>
+        </li>
+      {% else %}
+        <li class="li muted">No related articles yet.</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="ranking" class="card">
+    <div class="card-h">
+      <h2 class="h2">Ranking</h2>
+      <span class="muted">Top 10</span>
+    </div>
+    <ol class="olist">
+      {% for r in ranking %}
+        <li class="li">
+          <a href="{{ r.path }}">{{ r.title }}</a>
+          <span class="meta">r/{{ r.subreddit }} · score {{ r.score }} · comments {{ r.comments }}</span>
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section id="new" class="card">
+    <div class="card-h">
+      <h2 class="h2">New Articles</h2>
+      <span class="muted">Latest 10</span>
+    </div>
+    <ul class="list">
+      {% for n in new_articles %}
+        <li class="li">
+          <a href="{{ n.path }}">{{ n.title }}</a>
+          <span class="meta">r/{{ n.subreddit }} · score {{ n.score }} · comments {{ n.comments }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="policy" class="card policy">
+    {{ policy_block | safe }}
+  </section>
+{% endset %}
+{% include "base.html" %}
